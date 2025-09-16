@@ -51,7 +51,7 @@ jobs:
               password: ${{secrets.DOCKERHUB_PASSWORD}}
 
           - name: Build Docker image
-            run: docker build -t tonino62/demodevops:latest 
+            run: docker build -t tonino62/demodevops:latest .
 
           - name: Push Docker image
-            run: docker push tonino62/demodevops:latest
+            run: docker push tonino62/demodevops:latest 
